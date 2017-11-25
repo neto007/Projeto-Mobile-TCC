@@ -1,0 +1,61 @@
+.page-evento {
+
+	.imagem-evento{
+		.imagem-capa{
+			height: 150px;
+			width: 100%;
+		}
+	}
+
+	.icon-evento{
+
+		height: 50px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1000000;
+		margin-top: -18px;
+		
+		.icon-capa{
+			width: 70px;
+			height: 140%;
+			border-radius: 50%;
+			border-width: medium;
+			border-style: solid;
+			border-color: #9C27B0;
+		}
+	}
+
+	.desc{
+		padding-top: 15px;
+	}
+
+	.confirm-button {
+		width: 200%;
+		.button {
+			color: white;
+
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.evento-buttons {    
+		width: 200%;
+		.button {
+			color: white;
+
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.button-voucher{
+		background: #9C27B0;
+		left: 0%;
+    	width: 49%;
+	}
+
+}

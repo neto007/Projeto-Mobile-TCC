@@ -1,0 +1,57 @@
+<div class="bar bar-header bg-primary">
+    <h1 class="title bg-primary-text">Escolha suas preferencias</h1>
+</div>
+
+<ion-content id="page-interesse" class="has-header">
+    <div class="categorias">
+        <div class="categoria" ng-repeat="categoria in $ctrl.categorias" ng-click="$ctrl.selectItem($index)" ng-class="{selected: $ctrl.categoryIsSelected($index)}">
+            <img src="{{ categoria.imagem }}" />
+            <p>
+                {{ categoria.nome }}
+            </p>
+
+            <div class="check-selected" ng-if="$ctrl.categoryIsSelected($index)">
+                <i class="ion-checkmark-circled"></i>
+            </div>
+        </div>
+    </div>
+
+</ion-content>
+
+<button ui-sref="home" id="btn-interesse" class="button button-large button-avancar bg-primary bg-primary-text">
+	<i class="ion ion-checkmark-round"></i>
+</button>
+
+
+
+
+<!-- <ion-content class="page-interesse">
+    <div class="bar bar-header bar-escolha">
+        <h1 class="title">Qual seu ambiente favorito?</h1>
+    </div>
+    <div class="buttons padding">
+        <a class="item item-thumbnail-left">
+            <img src="/assets/images/party.jpg">
+            <h2></h2>
+            <p>Eventos/shows em casa de festas.</p>
+        </a>
+        <a class="item item-thumbnail-left">
+            <img src="/assets/images/bar-avatar.jpg">
+            <h2>Bar</h2>
+            <p>Lugar legal para bater um papo.</p>
+        </a>
+        <a class="item item-thumbnail-left">
+            <img src="/assets/images/restaurante-avatar.jpg">
+            <h2>Restaurante</h2>
+            <p>Os mais variados cardápios da cidade.</p>
+        </a>
+        <a class="item item-thumbnail-left">
+            <img src="/assets/images/fastfood-avatar.png">
+            <h2>Fast-Food</h2>
+            <p>Aquela saciada rápida da fome.</p>
+        </a>
+    </div>
+    <div class="button-skip padding">
+        <a href="#/home" class="item margin button button-block button-pular"><i class="ion ion-checkmark-circled"></i> Pular</a>
+    </div>
+</ion-content> -->

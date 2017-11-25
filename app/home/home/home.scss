@@ -1,0 +1,73 @@
+.page-home {
+    .bar-home {
+        .title {
+            color: white;
+        }
+    }
+    .pesquisar {
+        padding-top: 10%;
+        input {
+            color: #878fa4;
+            font-family: 'Exo', sans-serif;
+        }
+    }
+    .lista-menu {
+        padding-top: 16%;
+    }
+    .container {
+        background: #a20dd8;
+    }
+    .logo-estabelecimento {
+        max-height: 130px;
+    }
+    .local-icon-scroller {
+        height: 87px;
+        -webkit-overflow-scrolling: touch;
+        padding: 15px 15px 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        list-style: none;
+        padding: 5%;
+        width: 340px;
+        height: 100px;
+    }
+    .local-evento-scroller {
+        -webkit-overflow-scrolling: touch;
+        padding: 15px 15px 12px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        white-space: nowrap;
+        list-style: none;
+    }
+    .local-icon {
+        display: inline-block;
+        vertical-align: top;
+        height: 50px;
+        white-space: normal;
+        margin-right: 15px;
+        .image-icon {
+            -webkit-box-shadow: -1px 2px 15px -7px rgba(51, 52, 54, 0.77);
+            -moz-box-shadow: -1px 2px 15px -7px rgba(51, 52, 54, 0.77);
+            box-shadow: -1px 2px 15px -7px rgba(51, 52, 54, 0.77);
+            margin-left: 5%;
+            width: 54px;
+            height: 100%;
+            border-radius: 12%;
+        }
+    }
+    .fonteCardEvento {
+        font-size: 18px;
+        color: #878fa4;
+        font-family: 'Exo', sans-serif;
+    }
+    .fonteCardCategoria {
+        margin-bottom: 10%;
+        font-size: 16px;
+        color: #4a5771;
+        font-family: 'Exo', sans-serif;
+    }
+    .colorCard {
+        background-color: #f9fafd;
+    }
+}

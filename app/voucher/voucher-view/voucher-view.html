@@ -1,0 +1,32 @@
+<div class="bar bar-header bg-primary">
+    <a class="button icon-left ion-arrow-left-c button-clear button-light" href="#/evento"></a>
+
+    <h1 class="title bg-primary-text">Meus Vouchers</h1>
+</div>
+
+<ion-content id="page-voucher" class="page-voucher">
+    <div class="row">
+        <div class="col col-10">
+            <br>
+        </div>
+    </div>
+
+    <div class="row" ng-repeat="voucher in $ctrl.vouchers">
+        <div class="col col-100 ">
+            <div class="card cartaoVoucher" ui-sref="voucher({id: voucher.id})">
+                <div class="row">
+                    <div class="col col-75 ">
+                        <div class="col infoVaucher">
+                            <div class="eventoImg" style="background-image: url('{{ voucher.imagem }}');background-size:cover;"></div>
+                            <div>
+                                <h5>{{ voucher.nome }}</h5>
+                                <p>{{ voucher.estabelecimento.nome }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

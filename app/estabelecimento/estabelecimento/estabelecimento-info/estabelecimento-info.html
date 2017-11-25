@@ -1,0 +1,30 @@
+<ion-content class="estabelecimento-info ">
+    <div class="imagem-estabelecimento">
+        <img class="imagem-capa" src="{{ $ctrl.estabelecimento.imagem }}" />
+    </div>
+
+    <div class="list card">
+
+        <div class="item item-avatar">
+            <img src="{{ $ctrl.estabelecimento.imagem }}">
+            <h2>{{ $ctrl.estabelecimento.nome }}</h2>
+        </div>
+
+        <div class="item item-text-wrap">
+            <div class="item item-icon-left">
+                <i class="icon ion-ios-location-outline royal"></i>
+                <p class="fontIcon">
+                    {{ $ctrl.estabelecimento.endereco.rua }} - {{ $ctrl.estabelecimento.endereco.cidade }}
+                </p>
+            </div>
+
+            <div class="item item-icon-left">
+                <i class="icon ion-ios-telephone-outline royal"></i>
+                <p class="fontIcon">
+                    {{ $ctrl.estabelecimento.telefone }}
+                </p>
+            </div>
+
+
+        </div>
+</ion-content>

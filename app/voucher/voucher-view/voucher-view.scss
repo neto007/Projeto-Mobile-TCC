@@ -1,0 +1,55 @@
+.page-voucher {
+    .BotaoVoucher {
+        color: #FFFFFF;
+        background-color: #9c27b0;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 50px;
+        margin: 58px;
+    }
+    .cartaoVoucher {
+        .eventoImg {
+            padding: 30px;
+            margin-top: 4px;
+            border-radius: 10%;
+            float: left;
+            margin-right: 20px;
+        }
+        .infoVaucher {
+            margin-top: 5px;
+            h3 {
+                margin-left: 10px;
+                color: #9c27b0;
+            }
+            p {
+                font-size: 15px;
+                margin-left: 10px;
+            }
+        }
+        .statusvalido {
+            margin-top: 50%;
+            margin-left: 10%;
+            border-radius: 4px;
+            background-color: #1dd155;
+            color: #FFFFFF;
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+        .statusInvalido {
+            margin-top: 50%;
+            margin-left: 10%;
+            border-radius: 4px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            p {
+                font-size: 13px;
+                text-align: center;
+            }
+        }
+    }
+    .color {
+        background-color: antiquewhite;
+    }
+}

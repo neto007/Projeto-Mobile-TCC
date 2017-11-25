@@ -1,0 +1,50 @@
+<ion-content class="main page-menu">
+    <ion-side-menus enable-menu-with-back-views="true">
+        <ion-side-menu side="left">
+
+            <div class="bar bar-header bar-menu bg-primary">
+                <h1 class="title">Chega aí!</h1>
+            </div>
+
+            <div class="usuario bg-primary padding">
+                <img class="img-circle" src="{{ $ctrl.user.avatar }}" / ng-click="$ctrl.openLink('usuario-profile')">
+                <h2 class="bg-primary-text">{{ $ctrl.user.nome }}</h2>
+                <p class="bg-primary-text">{{ $ctrl.user.email }}</p>
+            </div>
+
+            <div class="list lista-menu">
+                <a class="item item-icon-left fonteMenu" ng-click="$ctrl.openLink('cidades')">
+                    <i class="icon ion-navigate fonteIcon"></i>
+                    Cidades
+                </a>
+
+                <a class="item item-icon-left fonteMenu" ng-click="$ctrl.openLink('home')">
+                    <i class="icon ion-home fonteIcon "></i> Página inicial
+
+                </a>
+
+                <a class="item item-icon-left fonteMenu" ng-click="$ctrl.openLink('chega-mais')">
+                    <i class="icon ion-location fonteIcon"></i> Chega aí
+                </a>
+
+                <a class="item item-icon-left fonteMenu" ng-click="$ctrl.openLink('voucher-view')">
+                    <i class="icon ion-qr-scanner fonteIcon"></i> Meus Vouchers
+                </a>
+
+                <a class="item item-icon-left fonteMenu" ng-click="$ctrl.openLink('estabelecimento-list')">
+                    <i class="icon ion-android-locate fonteIcon"></i> Estabelecimentos
+                </a>
+
+                <a class="item item-icon-left fonteMenu" ng-click="$ctrl.openLink('login')">
+                    <i class="icon ion-log-out fonteIcon"></i> Sair
+                </a>
+            </div>
+
+        </ion-side-menu>
+
+
+        <ion-side-menu-content>
+            <ng-transclude></ng-transclude>
+        </ion-side-menu-content>
+    </ion-side-menus>
+</ion-content>

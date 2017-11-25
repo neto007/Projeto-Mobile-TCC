@@ -1,0 +1,40 @@
+.title{
+        color: white;
+    }
+
+.page-usuario-profile {
+
+    .usuario {
+
+        img {
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        margin-top: 15%;
+
+        border-radius: 100%;
+        }
+        
+    }
+
+    .botao {
+        button {
+            font-size: 14px;
+        }
+    }
+
+
+}
+
+#btn-profile{
+	z-index: 99999999;
+	border-radius: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 20px;
+	padding: 6px;
+	font-size: 35px;
+	box-shadow: black 0.1em 0.1em 0.2em;
+}
+

@@ -1,0 +1,43 @@
+<div class="bar bar-header bar-home bg-primary">
+    <a class="button icon-left ion-navicon button-clear button-light" ng-click="$ctrl.slideMenu()"></a>
+    <h1 class="title">Profile</h1>
+</div>
+    
+<ion-content class="page-usuario-profile">
+    <div class = "row">
+        <div class="col-33"></div>
+            <div class="usuario padding col-33">
+                <img class="img-circle" src="{{ $ctrl.user.avatar }}" / ng-click="$ctrl.getImage">
+             </div>            
+        <div class="col-33"></div> 
+    </div>
+
+    <div class = "row">
+        <div class="col"></div>
+            <div class="botao col col-50">
+                <button class="button button-clear button-positive">
+                      Alterar imagem do perfil
+                </button>                       
+            </div>            
+        <div class="col"></div> 
+    </div>
+
+    <div class="list">
+        <label class="item item-input">
+            <span class="input-label">Nome</span>
+            <input type="text" placeholder="{{ $ctrl.user.nome }}" required minlength="3" maxlength="16">
+        </label>
+
+        <label class="item item-input">
+            <span class="input-label">E-mail</span>
+            {{ $ctrl.user.email }}
+        </label>
+    </div>
+
+    <button ng-click="$ctrl.concluir()" id="btn-profile" class="button button-large button-avancar bg-primary bg-primary-text" >
+	    <i class="ion ion-checkmark-round"></i>   
+    </button>
+
+
+</ion-content>
+

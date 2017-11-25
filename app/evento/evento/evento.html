@@ -1,0 +1,39 @@
+<div class="bar bar-header bar-evento bg-primary bg-primary-text">
+    <a class="button icon-left ion-navicon button-clear button-light" ng-click="$ctrl.slideMenu()"></a>
+    <h1 class="title bg-primary-text">Evento</h1>
+</div>
+
+<ion-content class="page-evento has-header">
+
+
+    <div class="imagem-evento" style="height:200px;">
+        <div style="background-image:url('{{ $ctrl.evento.imagem }}');background-size:cover;width:100%;height:100%;"></div>
+    </div>
+    <div class="icon-evento">
+        <img class="icon-capa" src="{{ $ctrl.evento.estabelecimento.imagem }} " />
+    </div>
+
+    <div class="desc">
+        <div class="card">
+            <div class="item item-divider bg-primary bg-primary-text">
+                {{$ctrl.pessoasConfirmadas}} já confirmaram presença!
+            </div>
+            <div class="item item-text-wrap">
+                <div map-lazy-load="https://maps.google.com/maps/api/js">
+                    <ng-map center="{{ $ctrl.evento.estabelecimento.nome }}, Maringá">
+                        <marker position="{{ $ctrl.evento.estabelecimento.nome }}, Maringá" title="Click to zoom"></marker> 
+                    </ng-map>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm-button padding">
+        <a ng-click="$ctrl.confirmarPresenca()" class="item margin button bg-primary-text button-voucher"><i class="ion ion-android-checkmark-circle"></i> Confirmar presença!</a>
+    </div>
+    <div class="evento-buttons padding">
+            <a ui-sref="voucher-profile({tipo: 'evento', id: $ctrl.evento.id})" class="item margin button bg-primary-text button-voucher"><i class="ion ion-ios-grid-view-outline"></i> Voucher</a>
+    </div>
+
+
+</ion-content>

@@ -1,0 +1,42 @@
+<div class="bar bar-header bar-home bg-primary">
+    <a class="button icon-left ion-navicon button-clear button-light" ng-click="$ctrl.slideMenu()"></a>
+    <h1 class="title">Eventos</h1>
+</div>
+
+<ion-content class="page-home">
+
+    <div class="pesquisar">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Pesquisar" ng-model="$ctrl.search">
+
+
+            </label>
+        </div>
+    </div>
+
+    <div class="card  fonteCardCategoria ">
+        <ul class="local-icon-scroller categoria">
+            <li class="local-icon" ng-repeat="categoria in $ctrl.categorias " style="text-align:center;">
+                <img class="image-icon" src="{{ categoria.imagem }}" />
+                <p><small>{{ categoria.nome }}</small></p>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="list card" ng-repeat="evento in $ctrl.eventos | filter: $ctrl.search">
+        <div class="item item-image">
+            <img src="{{ evento.imagem }} ">
+        </div>
+
+        <a class="item item-icon-left royal colorCard" ui-sref="evento({id: evento.id})">
+            <i class="icon ion-ios-location"></i>
+            <h2 class="fonteCardEvento">{{ evento.nome }}</h2>
+            {{ evento.estabelecimento.nome }} / {{ evento.data | date}}
+        </a>
+
+    </div>
+</ion-content>

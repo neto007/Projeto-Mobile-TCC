@@ -1,0 +1,15 @@
+<div class="bar bar-header bar-home bg-primary">
+    <a class="button icon-left ion-navicon button-clear button-light" ng-click="$ctrl.slideMenu()"></a>
+    <h1 class="title">Cidade</h1>
+</div>
+
+<ion-content class="has-header">
+    <ion-list class="cidadeModal has-header">
+
+
+        <ion-radio ng-repeat="cidade in $ctrl.cidades" ng-click="$ctrl.selecao(cidade)" ng-value="'A'">{{cidade.cidade}}</ion-radio>
+
+
+    </ion-list>
+
+</ion-content>

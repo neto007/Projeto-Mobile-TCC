@@ -1,0 +1,148 @@
+.page-estabelecimento {
+    .imagem-estabelecimento {
+        .imagem-capa {
+            height: 278px;
+            width: 100%;
+        }
+    }
+    .icon-estabelecimento {
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000000;
+        margin-top: -18px;
+        .icon-capa {
+            width: 70px;
+            height: 140%;
+            border-radius: 50%;
+        }
+    }
+    .col {
+        margin: 5px;
+    }
+    .local-icon-scroller {
+        height: 87px;
+        -webkit-overflow-scrolling: touch;
+        padding: 15px 15px 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        list-style: none;
+    }
+    .local-icon {
+        display: inline-block;
+        vertical-align: top;
+        height: 60px;
+        white-space: normal;
+        margin-right: 15px;
+        .image-icon {
+            width: 60px;
+            height: 100%;
+            border-radius: 40%;
+        }
+    }
+
+    .mapa{
+        margin-bottom: 30px;
+        .imagem-mapa{
+            height: 208px;
+        }
+    }
+}
+
+.card {
+    h5 {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 16px;
+        color: #526079;
+        font-family: 'Exo', sans-serif;
+    }
+}
+
+.EventosList {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 16px;
+    color: #526079;
+    font-family: 'Exo', sans-serif;
+}
+
+
+/* Estabelecimentos Eventos */
+
+.page-estabelecimento-evento {
+    .pesquisar {
+        padding-top: 2%;
+        input {
+            color: #878fa4;
+            font-family: 'Exo', sans-serif;
+        }
+    }
+    .fonteEvento {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 18px;
+        color: #526079;
+        font-family: 'Exo', sans-serif;
+    }
+    .fonteEvento-data {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 12px;
+        color: #323a47;
+        font-family: 'Exo', sans-serif;
+    }
+    .list {
+        a {
+            img {
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+
+/* Estabelecimentos Info */
+
+.estabelecimento-info {
+    .list {
+        margin-top: 0px;
+        .item {
+            img {
+                margin-left: 4%;
+            }
+            h2 {
+                text-align: center;
+                margin-top: 5%;
+                font-size: 18px;
+                color: #526079;
+                font-family: 'Exo', sans-serif;
+            }
+        }
+    }
+    .fontIcon {
+        text-align: center;
+        font-size: 18px;
+        color: #526079;
+        font-family: 'Exo', sans-serif;
+    }
+}
+
+
+/* Estabelecimentos Galeria */
+
+.estabelecimento-galeria {
+    .fonteTitulo {
+        margin-top: 5%;
+        text-align: center;
+        color: #323a47;
+        font-family: 'Exo', sans-serif;
+    }
+    .fonteDescricao {
+        text-align: center;
+        color: #878fa4;
+        font-family: 'Exo', sans-serif;
+    }
+}

@@ -1,0 +1,52 @@
+<div class="bar bar-header bg-primary">
+    <a class="button icon-left ion-arrow-left-c button-clear button-light" href="#/evento"></a>
+
+    <h1 class="title bg-primary-text">Voucher</h1>
+</div>
+
+<ion-content id="page-info" class="page-info has-header">
+    <div class="info">
+
+        <div class="VoucherObjeto" style="width: 100%;background-image:url('{{ $ctrl.voucher.imagem }}'); background-repeat: no-repeat;
+    background-size: cover;
+     "> </div>
+
+        <h3 class="tituloVoucher">{{ $ctrl.voucher.nome }}</h3>
+
+        <br><br>
+
+        <h3 class="Evento">{{ $ctrl.voucher.estabelecimento.nome }}</h3>
+
+    </div>
+
+
+    <div class="space">
+
+
+    </div>
+
+
+
+    <div class="rodape">
+
+        <p class="ion-ios-clock-outline padding" ng-if="$ctrl.voucher.dataFinal"></p>
+        <p class="colorfont" ng-if="$ctrl.voucher.dataFinal">Expira em : {{ $ctrl.voucher.dataFinal | date }} </p>
+
+
+
+        <div class="button-voucher">
+            <button class="button button-block bg-primary ativarVoucher" ng-click="$ctrl.confirmarVoucher($ctrl.voucher.id)">  
+                Utilizar voucher
+            </button>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</ion-content>

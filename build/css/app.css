@@ -1,0 +1,90 @@
+.page-login {
+  background: transparent;
+  background-size: cover;
+  overflow: hidden; }
+  .page-login .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden; }
+  .page-login .container {
+    height: 100%;
+    position: relative;
+    padding-top: 50%; }
+  .page-login .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-color: purple; }
+  .page-login .login-buttons .button {
+    color: white; }
+    .page-login .login-buttons .button i {
+      opacity: 0.6;
+      margin-right: 15px; }
+  .page-login .button-facebook {
+    background: #3b5998; }
+  .page-login .button-google-plus {
+    background: #d34836; }
+.page-interesse .bar-escolha {
+  background: #a20dd8; }
+  .page-interesse .bar-escolha .title {
+    color: white; }
+
+.page-interesse .buttons {
+  padding-top: 23%; }
+
+.page-interesse .button-skip .button {
+  color: white; }
+  .page-interesse .button-skip .button i {
+    opacity: 0.6;
+    margin-right: 15px; }
+
+.page-interesse .button-pular {
+  background: #a20dd8; }
+.page-home .bar-home {
+  background: #a20dd8; }
+  .page-home .bar-home .title {
+    color: white; }
+
+.page-home .pesquisar {
+  padding-top: 10%; }
+
+.page-home .lista-menu {
+  padding-top: 16%; }
+
+.page-home .container {
+  background: #a20dd8; }
+
+.page-home .estabelecimento-info {
+  padding-left: 10px; }
+
+.page-home .logo-estabelecimento {
+  max-height: 130px; }
+
+.page-home .local-icon-scroller {
+  height: 87px;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px 15px 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  list-style: none; }
+
+.page-home .local-icon {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  white-space: normal;
+  margin: 0 10px; }
+
+/*# sourceMappingURL=app.css.map*/

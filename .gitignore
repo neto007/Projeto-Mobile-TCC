@@ -1,0 +1,17 @@
+.DS_Store
+.tmp
+.git
+node_modules
+.settings
+*.log
+dist/
+www/
+coverage
+.nyc_output
+.nyc_output/
+report/
+*.lock
+coverage
+TESTS-PhantomJS_*
+platforms
+

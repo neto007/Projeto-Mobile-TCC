@@ -1,0 +1,17 @@
+<ion-content class="page-estabelecimento-evento">
+    <div class="pesquisar">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Pesquisar" ng-model="$ctrl.search">
+            </label>
+        </div>
+
+        <div class="list">
+            <a class="item item-thumbnail-left" href="#/evento" ng-repeat="evento in $ctrl.eventos | filter: $ctrl.search" ui-sref="evento({id: evento.id})" ng-show="evento.estabelecimento.id == $ctrl.params.id">
+                <img src="{{evento.imagem}}">
+                <h2 class="fonteEvento">{{evento.nome}}</h2>
+                <p class="fonteEvento-data" date="dd/yy/mm">{{evento.data | date}}</p>
+            </a>
+        </div>
+</ion-content>

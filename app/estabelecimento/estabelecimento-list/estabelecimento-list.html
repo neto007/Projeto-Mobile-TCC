@@ -1,0 +1,26 @@
+<ion-content class="page-estabelecimento-list">
+
+    <div class="bar bar-header bar-home bg-primary">
+        <a class="button icon-left ion-navicon button-clear button-light" ng-click="$ctrl.slideMenu()"></a>
+        <h1 class="title">Estabelecimentos</h1>
+    </div>
+
+    <div class="pesquisar">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input  type="text" placeholder="Pesquisar" ng-model="$ctrl.search">
+            </label>
+        </div>
+    </div>
+    
+    <div class="list listagem">
+        <a class="item item-thumbnail-left" ng-repeat="estabelecimento in $ctrl.estabelecimentos | filter: $ctrl.search" ui-sref="estabelecimento({id: estabelecimento.id})">
+            <img src="{{ estabelecimento.imagem }}">
+            <h2 class="fonteTitulo">{{ estabelecimento.nome }}</h2>
+            <p class="fonteKM">{{ ($index+1) * 1.75 }} Km</p>
+
+        </a>
+    </div>
+
+</ion-content>

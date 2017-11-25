@@ -1,0 +1,14 @@
+<ion-content class="estabelecimento-galeria ">
+
+    <h2 class="fonteTitulo">GALERIA</h2>
+    <div class="list card" ng-repeat="id in [1,2,3,4]" ng-click="$ctrl.selectItem(id)" ng-class="{selected: $ctrl.categoryIsSelected(id)}">
+        <div class="item item-image">
+            <img src="/assets/images/estabelecimento_detalhe/{{id}}.png" />
+            <div class="item ">
+
+            </div>
+        </div>
+
+    </div>
+
+</ion-content>

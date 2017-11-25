@@ -1,0 +1,98 @@
+.bar-home {
+    .title {
+        color: white;
+    }
+}
+
+.page-chega-ai {
+    .bar-home {
+        .title {
+            color: white;
+        }
+    }
+    .pesquisar {
+        padding-top: 10%;
+    }
+    .list {
+        margin-bottom: 0px;
+    }
+    a.item {
+        color: yellow;
+        text-decoration: none;
+    }
+    .lista-menu {
+        padding-top: 16%;
+    }
+    .container {
+        background: #a20dd8;
+    }
+    .logo-estabelecimento {
+        max-height: 130px;
+    }
+    .local-icon-scroller {
+        height: 87px;
+        -webkit-overflow-scrolling: touch;
+        padding: 15px 15px 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        list-style: none;
+    }
+    .local-evento-scroller {
+        -webkit-overflow-scrolling: touch;
+        padding: 15px 15px 12px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        white-space: nowrap;
+        list-style: none;
+    }
+    .local-icon {
+        display: inline-block;
+        vertical-align: top;
+        height: 50px;
+        white-space: normal;
+        margin-right: 15px;
+        .image-icon {
+            width: 54px;
+            height: 100%;
+            border-radius: 40%;
+        }
+    }
+}
+
+#btn-interesse.button-avancar {
+    z-index: 99999999;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 6px;
+    font-size: 35px;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(51, 52, 54, 0.55);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(51, 52, 54, 0.55);
+    box-shadow: 0px 0px 8px 1px rgba(51, 52, 54, 0.55);
+}
+
+#btn-interesse.button-avancar :active {
+    background-color: blueviolet;
+    color: floralwhite;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    padding: 7px 7px;
+    cursor: pointer;
+}
+
+.checkbox input:before,
+.checkbox .checkbox-icon:before {
+    border-color: #ddd;
+}
+
+.checkbox input:checked:before,
+.checkbox input:checked+.checkbox-icon:before {
+    background: #9c27b0;
+    border-color: #9c27b0;
+}

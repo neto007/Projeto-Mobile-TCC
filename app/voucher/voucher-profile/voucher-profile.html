@@ -1,0 +1,51 @@
+<div class="bar bar-header bg-primary">
+    <a class="button icon-left ion-arrow-left-c button-clear button-light" href="#/evento"></a>
+
+    <h1 class="title bg-primary-text"></h1>
+</div>
+
+<ion-content id="page-voucher" class="Page-voucher-profile">
+    <div class="row">
+        <div class="col col-10">
+            <br>
+        </div>
+    </div>
+
+    <div class="row" ng-repeat="voucher in $ctrl.vouchers">
+        <div class="col col-100 ">
+            <div class="card cartaoVoucher  ">
+                <div class="row">
+                    <div class="col adicionarVoucher" style="width: 100%; background-image:url('{{ voucher.imagem }}'); background-repeat: no-repeat;">
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="horario">
+                        <p class="padding">&emsp;</p>
+                        <p class="ion-ios-clock-outline padding" ng-if="voucher.dataFinal"></p>
+                        <p class="colorfont" ng-if="voucher.dataFinal">Expira em : {{ voucher.dataFinal | date }}</p>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col descricaoVoucher">
+                        <p class="titulo">{{ voucher.nome }} </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col ">
+                        <button class="button  button-outline-block button-calm" ng-click="$ctrl.adquirirVoucher(voucher.id)">
+                            Adquirir Voucher
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

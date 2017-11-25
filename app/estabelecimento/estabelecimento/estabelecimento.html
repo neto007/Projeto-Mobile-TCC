@@ -1,0 +1,40 @@
+<div class="bar bar-header bar-evento bg-primary bg-primary-text">
+    <a class="button icon-left ion-navicon button-clear button-light" ng-click="$ctrl.slideMenu()"></a>
+    <h1 class="title bg-primary-text">{{$ctrl.estabelecimento.nome}}</h1>
+</div>
+
+<ion-content class="page-estabelecimento has-header">
+
+    <ion-tabs class="tabs-color-royal  tabs-icon-top">
+
+        <ion-tab title="Home" icon-on="ion-ios-home" icon-off="ion-ios-home-outline">
+            <div class="imagem-estabelecimento bg-primary">
+                <img class="imagem-capa" src="{{ $ctrl.estabelecimento.imagem }}" />
+            </div>
+            <div class="icon-estabelecimento">
+                <img class="icon-capa" src="{{ $ctrl.estabelecimento.imagem }}" />
+            </div>
+            
+            <div class="mapa">
+                <div map-lazy-load="https://maps.google.com/maps/api/js">
+                    <ng-map class="imagem-mapa" center="{{ $ctrl.estabelecimento.nome + ', ' + $ctrl.estabelecimento.endereco.cidade }}">
+                        <marker position="{{ $ctrl.estabelecimento.nome  + ', ' +  $ctrl.estabelecimento.endereco.cidade }}" title="Click to zoom"></marker>
+                    </ng-map>
+                </div>
+            </div>
+        </ion-tab>
+
+        <ion-tab title="Eventos" icon-on="ion-ios-calendar" icon-off="ion-ios-calendar-outline">
+            <estabelecimento-evento></estabelecimento-evento>
+        </ion-tab>
+
+        <ion-tab title="Info" icon-on="ion-ios-information" icon-off="ion-ios-information-outline">
+            <estabelecimento-info estabelecimento="$ctrl.estabelecimento"></estabelecimento-info>
+        </ion-tab>
+        
+        <ion-tab title="Voucher" icon-on="ion-ios-film" icon-off="ion-ios-film-outline">
+            <voucher-profile></voucher-profile>
+        </ion-tab>
+
+    </ion-tabs>
+</ion-content>
